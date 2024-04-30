@@ -3,19 +3,11 @@
 public class Main {
 
     public static void main(String[] args) {
-        BmiService  service = new BmiService();
+        BmiService service = new BmiService();
+        int weight = 98;
+        double height = 1.87;
+        int bmi = service.calculate(weight, height);
 
-        System.out.println();
-        System.out.println("Индекс массы тела:  ");
-        System.out.println(service.calculate(98,  1.87));
-
-        System.out.println();
-        System.out.println("Индекс массы тела:  ");
-        System.out.println(service.calculate(73,  1.82));
-
-        System.out.println();
-        System.out.println("Индекс массы тела:  ");
-        System.out.println(service.calculate(77,  1.67));
-
+        System.out.println("Индекс массы тела:  " + bmi);
     }
 }
